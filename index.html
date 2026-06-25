@@ -1,8 +1,199 @@
 <!DOCTYPE html>
-<hmtl lang="es">
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabor Dorado</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#fffaf2;
+    color:#333;
+}
+
+/* Encabezado */
+header{
+    background:linear-gradient(135deg,#ff7b00,#ffb347);
+    padding:20px;
+    text-align:center;
+    color:white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.1rem;
+}
+
+/* Menú */
+nav{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a{
+    text-decoration:none;
+    color:#ff7b00;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#cc6200;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:
+    linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.8)),
+    url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff7b00;
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#cc6200;
+}
+
+/* Tarjetas */
+.servicios{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.servicios h2{
+    margin-bottom:40px;
+    color:#ff7b00;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:280px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card .icon{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+/* Footer */
+footer{
+    background:#ff7b00;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
+</head>
 <body>
-    <h3> GGHHGHG</h3>
-</body>
 
+<header>
+    <div class="logo">🍔👑</div>
+    <h1>Sabor Dorado</h1>
+    <p>La mejor experiencia gastronómica de la ciudad</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Menú</a>
+    <a href="#">Promociones</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<section class="hero">
+    <h2>¡Comida que enamora!</h2>
+    <p>Hamburguesas, pizzas y platillos preparados con pasión.</p>
+    <a href="#" class="btn">Ver Menú</a>
+</section>
+
+<section class="servicios">
+    <h2>Nuestras Especialidades</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🍕</div>
+            <h3>Pizzas Artesanales</h3>
+            <p>Preparadas con ingredientes frescos y masa casera.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🍔</div>
+            <h3>Hamburguesas Premium</h3>
+            <p>Carne de calidad y sabores únicos.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🍰</div>
+            <h3>Postres</h3>
+            <p>El toque dulce perfecto para tu día.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Sabor Dorado | Todos los derechos reservados
+</footer>
+
+</body>
 </html>
